@@ -1,0 +1,21 @@
+{
+  "name": "media-query-less",
+  "version": "0.1.0",
+  "description": "media query in a less style",
+  "repository": "git@github.com:YoungLeeNENU/media-query-less.git",
+  "keywords": [
+	"media-query",
+    "less",
+    "mobile"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Young Lee",
+    "email": "youngleemails@gmail.com"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-haml": "^0.1.5",
+	"gulp-sass": "^2.0.1"
+  }
+}

@@ -1,0 +1,82 @@
+!!!5
+%html
+  %head
+    %meta(charset="utf-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    -# %link(rel="stylesheet" type="text/css" media="all" href="{{ static_url('css/global.css') }}")
+    %link(rel="stylesheet" type="text/css" media="all" href="../css/global.css")    
+    %title
+      Media Queries in Less
+  %body
+    %hearder(class="header")
+      %h1(class="media-query-less")
+        mediaquery.less
+    %p(class="media-type")
+      %strong Orientation
+    %ul(class="media-testcases")
+      %li(class="testcase-item is-landscape")
+        landscape
+      %li(class="testcase-item is-portrait")
+        portrait
+        
+    %p(class="media-type")
+      %strong hdpi
+    %ul(class="media-testcases")
+      %li(class="testcase-item hdpi-1-3")
+        hdpi 1.3 (Nexus 7)
+      %li(class="testcase-item hdpi-1-4")
+        hdpi 1.4 (Lumia 520)
+      %li(class="testcase-item hdpi-1-5")
+        hdpi 1.5 (Xperia U)
+      %li(class="testcase-item hdpi-2-0")
+        hdpi 2.0 (Galaxy S III)
+      %li(class="testcase-item hdpi-2-6")
+        hdpi 2.6 (Lumia 930)
+      %li(class="testcase-item hdpi-3-0")
+        hdpi 3.0 (Galaxy S4)
+        
+    %p(class="media-type")
+      %strong iPhone3
+    %ul(class="media-testcases")
+      %li(class="testcase-item")
+        iphone3
+      %li(class="testcase-item")
+        landscape
+      %li(class="testcase-item")
+        portrait        
+    %p(class="media-type")
+      %strong iPhone4
+    %ul(class="media-testcases")
+      %li(class="testcase-item iphone4")
+        iphone4
+      %li(class="testcase-item iphone4-landscape")
+        landscape
+      %li(class="testcase-item iphone4-portrait")
+        portrait
+    %p(class="media-type")
+      %strong iPhone5
+    %ul(class="media-testcases")
+      %li(class="testcase-item iphone5")
+        iphone5
+      %li(class="testcase-item iphone5-landscape")
+        landscape
+      %li(class="testcase-item iphone5-portrait")
+        portrait        
+    %p(class="media-type")
+      %strong iPhone6
+    %ul(class="media-testcases")
+      %li(class="testcase-item iphone6")
+        iphone6
+      %li(class="testcase-item iphone6-landscape")
+        landscape
+      %li(class="testcase-item iphone6-portrait")
+        portrait        
+    %p(class="media-type")
+      %strong iPhone6 plus
+    %ul(class="media-testcases")
+      %li(class="testcase-item iphone6p")
+        iphone6 plus
+      %li(class="testcase-item iphone6p-landscape")
+        landscape
+      %li(class="testcase-item iphone6p-portrait")
+        portrait

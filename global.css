@@ -1,0 +1,153 @@
+/* Global CSS */
+/* @import "./test"; */
+/* DONE Orientation */
+/* hdpi */
+/* iphone3 */
+/* iphone4 */
+/* iphone5 */
+/* iphone6 */
+/* iphone6 plus */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  font-family: sans-serif, "Hiragino Sans GB", Helvetica Neue, Helvetica, Roboto, "STHeiti";
+  color: #ffffff;
+  background-color: #fffacd;
+}
+body .header {
+  display: block;
+  width: 100%;
+  height: 96px;
+  color: #8b8989;
+  background-color: #cdc5bf;
+}
+body .header .media-query-less {
+  text-align: center;
+  line-height: 32px;
+  padding: 32px 0 32px 0;
+  white-space: nowrap;
+}
+body .media-type {
+  text-align: center;
+  line-height: 22px;
+  color: #8b8970;
+  margin: 10px 0px 10px 0px;
+}
+body .media-testcases {
+  text-align: center;
+}
+body .media-testcases .testcase-item {
+  display: inline-block;
+  line-height: 22px;
+  margin: 10px 5px 10px 5px;
+  background-color: black;
+  padding: 6px 16px 6px 16px;
+  border-radius: 6px;
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+}
+@media screen and (orientation: landscape) {
+  body .media-testcases .testcase-item.is-landscape {
+    color: green;
+  }
+}
+@media screen and (orientation: portrait) {
+  body .media-testcases .testcase-item.is-portrait {
+    color: green;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3ddpx) {
+  body .media-testcases .testcase-item.hdpi-1-3 {
+    color: green;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.4), only screen and (min--moz-device-pixel-ratio: 1.4), only screen and (-o-min-device-pixel-ratio: 1.4 / 1), only screen and (min-resolution: 134dpi), only screen and (min-resolution: 1.4ddpx) {
+  body .media-testcases .testcase-item.hdpi-1-4 {
+    color: green;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5ddpx) {
+  body .media-testcases .testcase-item.hdpi-1-5 {
+    color: green;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2ddpx) {
+  body .media-testcases .testcase-item.hdpi-2-0 {
+    color: green;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.6), only screen and (min--moz-device-pixel-ratio: 2.6), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (min-resolution: 250dpi), only screen and (min-resolution: 2.6ddpx) {
+  body .media-testcases .testcase-item.hdpi-2-6 {
+    color: green;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min--moz-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3 / 1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3ddpx) {
+  body .media-testcases .testcase-item.hdpi-3-0 {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+  body .media-testcases .testcase-item.iphone4 {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation: landscape) {
+  body .media-testcases .testcase-item.iphone4-landscape {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation: portrait) {
+  body .media-testcases .testcase-item.iphone4-portrait {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+  body .media-testcases .testcase-item.iphone5 {
+    color: green;
+    /* ... */
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation: landscape) {
+  body .media-testcases .testcase-item.iphone5-landscape {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation: portrait) {
+  body .media-testcases .testcase-item.iphone5-portrait {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  body .media-testcases .testcase-item.iphone6 {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+  body .media-testcases .testcase-item.iphone6-landscape {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  body .media-testcases .testcase-item.iphone6-portrait {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
+  body .media-testcases .testcase-item.iphone6p {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  body .media-testcases .testcase-item.iphone6p-landscape {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  body .media-testcases .testcase-item.iphone6p-portrait {
+    color: green;
+  }
+}
